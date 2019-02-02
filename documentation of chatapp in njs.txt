@@ -1,0 +1,41 @@
+To start a project:
+
+1.Go to the desired location then open cmd
+
+npn init -> to create a package
+
+2. Install express framework
+
+npm install express --save [ --save, saves it in the dependencies]
+
+3.(optional) you can install nodemon if you want to run your code automatically
+
+npm install nodemon --save-dev
+
+
+4 editor: creating server and express app
+
+var express = require('express')
+
+var app = express() //calling an instance of the express app like java
+
+var server = app.listen(4000, function(){
+
+	console.log("Listening to your requests maite");
+
+});
+
+
+5. nodemon index to call server orrrr
+
+
+cmd> node index.js
+
+
+### Static Files in njs::
+
+1. for an app to use static files do:
+
+app.use(express.static('public'));
+
+2. then create a public directory, in that create html files for specific apps
